@@ -1,4 +1,4 @@
-/********* RESET CSS *********/
+/************************************************* RESET CSS ******************************************/
 
 p,
 h1,
@@ -46,25 +46,25 @@ button {
 .body {
     font-family: "Roboto", sans-serif;
     color: #2c2c2c;
-    background-color: #ffffff;
+    background-color: #fefefe;
 }
 
 .container {
-    max-width: 320px;
+    width: 320px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
-        padding: 0, 32px;
+        width: 768px;
+        padding: 0 32px;
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .container {
-        max-width: 1158px;
+        width: 1280px;
         padding: 0 16px;
         margin: 0 auto;
     }
@@ -72,7 +72,7 @@ button {
 
 
 
-/************ HEADER ************/
+/***************************************** HEADER ***********************************************/
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -84,6 +84,7 @@ box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 72px;
 }
 
 .header-menu {
@@ -93,3 +94,137 @@ box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
 .header-btn {
     display: none;
 }
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.burger-btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.burger-svg {
+    display: block;
+    fill: #7eb101;
+}
+
+@media screen and (min-width: 768px) {
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .header-menu {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        margin-left: auto;
+    }
+
+    .header-menu-link {
+        font-weight: 400;
+            font-size: 14px;
+            color: #000;
+    }
+
+    .header-menu-link span {
+        text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: #bbf330;
+    }
+
+    .header-menu-link:hover,
+    .header-menu-link:focus {
+        color:#bbf330;
+        transition: 0.3s;
+    }
+
+        .header-menu-link:hover span,
+        .header-menu-link:focus span {
+            text-decoration: none;
+        }
+
+    .header-btn {
+        display: inline-block;
+        border: none;
+        border-radius: 30px;
+        transition: 0.2s;
+            width: 98px;
+            height: 32px;
+            margin-left: 30px;
+            background-color: #bbf330;
+    }
+    
+    .header-btn-span {
+        font-weight: 500;
+            font-size: 13px;
+            line-height: 1.5;
+            
+            
+    }
+
+    .header-btn:hover {
+        background-color: transparent;
+        border: 2px solid #597d00;
+            border-radius: 30px;
+            width: 106px;
+            height: 40px;
+    }
+
+
+    .burger-btn  {
+        display: none;
+    }
+}
+
+/************************************************* HERO SECTION *****************************************/
+
+.hero {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.hero-title {
+font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.hero-subtitle {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 28px;
+}
+
+.hero-btn {
+    display: inline-block;
+        border: none;
+        border-radius: 30px;
+        transition: 0.2s;
+        width: 98px;
+        height: 32px;
+        background-color: #bbf330;
+}
+
+.hero-btn-span {
+    font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+}
+
+/************************************* ABOUT SECTION *****************************************/
+
+.about {
+    background-image: url(../image/img/Rectangle\ 694.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-img {}

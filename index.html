@@ -22,15 +22,15 @@
   <body class="body">
     <header class="header">
       <div class="container header-container">
-        <nav class="header-navigator">
+        <nav class="header-navigation">
           <a class="header-logo" href="./index.html">
-            <svg class="header-logo-svg">
+            <svg class="header-logo-svg" width="66" height="52">
               <use href="./image/icons.svg#logo"></use>
             </svg>
           </a>
           <ul class="header-menu">
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#home">Home</a>
+              <a class="header-menu-link" href="#home"><span>Home</span></a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link" href="#about">About</a>
@@ -49,16 +49,51 @@
         <button class="header-btn">
           <span class="header-btn-span">Order Now</span>
         </button>
-        <a class="burger-btn" type="button">
-          <svg class="burger-svg">
-            <use
-              href="./image/icons.svg#burger_menu"
-              width="28"
-              height="28"
-            ></use>
+        <button class="burger-btn" type="button">
+          <svg class="burger-svg" width="28" height="28">
+            <use href="./image/icons.svg#burger_menu"></use>
           </svg>
-        </a>
+        </button>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+          <p class="hero-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
+          <button class="hero-btn">
+            <span class="hero-btn-span">Order Now</span>
+          </button>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <img class="about-img" src="" alt="apple" width="201" height="255" />
+        </div>
+        <title class="about-title">What’s Special About Our Offerings</title>
+        <subtitle class="about-subtitle"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+          erat.</subtitle
+        >
+        <div class="about-card"></div>
+        <div class="about-card2"></div>
+        <button class="about-btn">
+          <span class="about-btn-span">Order Now</span>
+        </button>
+        <button class="about-btn2">
+          <span class="about-btn-span2">Read More</span>
+          <svg class="about-svg" width="14" height="14">
+            <use href="./image/icons.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </section>
+    </main>
   </body>
 </html>
